@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <form action="/add" method="POST">
+        <label for="amount">Expense Amount:</label><br>
+        <input type="number" placeholder="Enter the amount" id="amount" name="amount"><br>
+        <label for="description">Description:</label><br>
+        <input type="text" placeholder="Description" id="description" name="description"><br>
+        <label for="category">Choose Category:</label><br>
+        <select id="category" name="category">
+            <option>Food</option>
+            <option>Electricity</option>
+            <option>Movie</option>
+            <option>Fuel</option>
+            <option>Grocery</option>
+        </select><br>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
